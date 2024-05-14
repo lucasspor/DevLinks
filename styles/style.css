@@ -34,12 +34,13 @@
   
     /* background: color image position/size; || isto é um shorthand ou atalho*/
     /*background: url(./assets/bj-mobile.jpg) no-repeat top center/cover;*/
-  
+    height: 100%;
     background: var(--bg-color);
   }
   
   #container {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     margin: auto;
   
     margin: 56px auto 0;
@@ -175,3 +176,16 @@
       text-align: center;
       font-size: 14px;
   }
+
+  /*Media query*/
+
+  @media (max-width:900px){
+
+    :root{
+        --bg-color: #0c0b0b;
+    }
+
+    .light{
+        --bg-color: #ddd9dc;
+    }
+}
